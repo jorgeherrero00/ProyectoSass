@@ -515,7 +515,7 @@ footer {
      */ }
   .main_contacto .contenedor-imagen {
     padding-top: 6.25em;
-    background-image: url(../../imagenes/depto3.jpg);
+    background-image: url(../imagenes/depto3.jpg);
     vertical-align: top;
     background-color: #303030;
     background-blend-mode: soft-light;
