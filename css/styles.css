@@ -5,7 +5,7 @@
     background-size: cover;
     background-position: center; }
   25%, 45% {
-    background-image: url("../imagenes/imagen2.webp");
+    background-image: url("../imagenes/imagen2.jpg");
     background-size: cover;
     background-position: center; }
   50%, 70% {
@@ -435,7 +435,7 @@ footer {
 
 .contenedor-imagen2 {
   background-size: cover;
-  background-image: url("../../imagenes/fotoo.jpg");
+  background-image: url("../imagenes/fotoo.jpg");
   vertical-align: top;
   margin-top: 5.625em;
   background-repeat: no-repeat;
