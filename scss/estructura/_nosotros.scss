@@ -1,0 +1,189 @@
+/**
+ * Estilos para la sección Nosotros.
+ */
+
+/* ----- ESTILOS DE LA SECCIÓN NOSOTROS ----- */
+
+/// Configuración general para la sección Nosotros.
+.main_nosotros {
+    // Configuración del fondo y espacio en la parte superior de la sección Nosotros
+    background: #3c4045;
+    padding-top: 7.8125em;
+
+    /// Contenedor flexible para alinear elementos en la sección Nosotros.
+    .flex_nosotros {
+        display: flex;
+        justify-content: space-around;
+        justify-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+/// Estilos para la sección de información en Nosotros.
+.info {
+    width: 50%;
+
+    /// Estilos para la sección Cordoba dentro de la sección de información.
+    .cordoba {
+        padding: 2.8125em 0em 1.0125em 0em;
+
+        /// Contenedor de texto para la sección Cordoba.
+        .contenedor-texto {
+            text-align: left;
+            line-height: 1.25em;
+            color: #979797;
+
+            /// Estilos para el título en la sección Cordoba.
+            .tit {
+                text-align: center;
+                margin-bottom: 1.25em;
+                color: #acacac;
+                font-weight: 600;
+                font-family: $primaryFont;
+            }
+        }
+    }
+
+    /// Estilos para la sección de información general.
+    .informacion {
+        text-align: center;
+
+        /// Estilos para el título en la sección de información general.
+        .titulo {
+            padding: 0.5em;
+            font-family: $primaryFont;
+            font-size: 3.4375em;
+            font-weight: 400;
+            color: #acacac;
+        }
+
+        /// Estilos para los párrafos en la sección de información general.
+        p {
+            color: #979797;
+            font-weight: 400;
+            text-align: left;
+        }
+
+        /// Estilos para la sección de "Surgió en".
+        .surgio {
+            text-align: center;
+            margin: 1.25em 1.25em;
+            color: #acacac;
+            font-weight: 600;
+            font-family: $primaryFont;
+        }
+
+        /// Estilos para el contenedor de texto en la sección de información general.
+        .tex {
+            padding-bottom: 2.5em;
+        }
+    }
+}
+
+/// Estilos para el contenedor de la segunda imagen en Nosotros.
+.contenedor-imagen2 {
+    background-size: cover;
+    background-image: url("../imagenes/fotoo.jpg");
+    vertical-align: top;
+    margin-top: 5.625em;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 31.25em;
+    height: 31.25em;
+    box-shadow: 10px 15px 15px 0px rgba(0, 0, 0, 0.035);
+}
+
+/// Estilos para la sección de clientes en Nosotros.
+.clientes {
+    clear: both;
+    background: #ffffff;
+    color: #fff;
+    height: 31.25em;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: -1.25em;
+
+    /// Estilos para el título en la sección de clientes.
+    h2 {
+        text-align: center;
+        font-family: $primaryFont;
+        font-weight: 400;
+        font-size: 2.5em;
+        color: #353535;
+        padding: 3.125rem 0 3.75rem 0;
+    }
+
+    /// Estilos para las secciones de cliente1 y cliente2.
+    .cliente1, .cliente2 {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        margin-bottom: 1.25em;
+        text-align: left;
+
+        /// Estilos para el contenedor de imagen del cliente.
+        .cont_img_cliente {
+            width: 6.25em;
+            height: 6.25em;
+            border-radius: 100%;
+            overflow: hidden;
+            margin-right: 1.875em;
+
+            /// Estilos para la imagen del cliente.
+            .foto_cliente {
+                background-position: center;
+                background-size: cover;
+                vertical-align: top;
+            }
+        }
+    }
+
+    /// Estilos específicos para la sección cliente2.
+    .cliente2 {
+        flex-direction: row-reverse;
+
+        /// Estilos específicos para el contenedor de imagen del cliente en la sección cliente2.
+        .cont_img_cliente {
+            width: 6.25em;
+            height: 6.25em;
+            border-radius: 100%;
+            overflow: hidden;
+            margin-left: 1.875em;
+            padding-right: 6.25em;
+
+            /// Estilos específicos para la imagen del cliente en la sección cliente2.
+            .foto_cliente {
+                background-size: cover;
+                background-position: center;
+                vertical-align: top;
+            }
+        }
+    }
+}
+
+/// Estilos para la sección de opinión en Nosotros.
+.opinion {
+    color: #000;
+    font-size: 1.125em;
+    line-height: 1.75em;
+    margin-bottom: 0.625em;
+    align-self: center;
+    width: 70%;
+}
+
+/* ----- GRID ----- */
+
+/// Asignación de área en la cuadrícula para la sección Nosotros.
+.main_nosotros {
+    grid-area: nosotros;
+}
+
+/// Configuración de la cuadrícula para la sección Nosotros.
+.grid_nosotros {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header"
+    "nosotros"
+    "footer";
+}

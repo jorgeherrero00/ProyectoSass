@@ -1,0 +1,123 @@
+// ----- VARIABLES ----- //
+
+/// Color de fondo para el proyecto.
+$colorBack: rgb(255, 255, 255);
+
+/// Fuente principal utilizada en el proyecto.
+$primaryFont: 'Lora', serif;
+
+/// Estilo de los botones en el proyecto.
+$boton: estilo;
+
+/// Color de fondo para la lista.
+$lista: #000;
+
+// ----- MIXINS ----- //
+
+/// Mixin para estilizar títulos.
+/// @mixin title
+/// @desc Aplica estilos comunes a títulos en el proyecto.
+/// @property {font-family} font-family - Fuente del título.
+/// @property {font-size} font-size - Tamaño del título.
+/// @property {font-weight} font-weight - Peso de la fuente del título.
+@mixin title {
+    font-family: 'Lora', serif;
+    font-size: 2.5em;
+    font-weight: 500;
+}
+
+/// Mixin de posicionamiento con flexbox
+/// @example
+/// .footer{
+///     @include flexposition(row, space-around);
+/// }
+/// @parameter {string} $direction [row] -valor para direction
+/// @parameter {string} $justifycontent [center] -valor para justify-content
+/// @parameter {string} $alignitem [center] -valor para align-items
+
+@mixin flexposition($direction:row, $justifycontent:center, $alignitem:center){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justifycontent;
+    align-items: $alignitem;
+}
+
+// ----- MAPS ----- //
+
+/// Mapa de colores para las redes sociales.
+$paletaRedes: ('facebook': #1877f2, 'twitter': #1da1f2, 'instagram': #e1306c, 'whatsapp': #25d366);
+
+// ----- KEYFRAMES ----- //
+
+/// Animación de banner con diferentes imágenes.
+/// @keyframes banner
+/// @desc Define una animación de banner con transiciones entre varias imágenes.
+/// @property {0%, 20%} background-image - Imagen en el inicio y primer tercio de la animación.
+/// @property {25%, 45%} background-image - Imagen en el segundo tercio de la animación.
+/// @property {50%, 70%} background-image - Imagen en el tercer tercio de la animación.
+/// @property {75%, 100%} background-image - Imagen al final de la animación.
+@keyframes banner {
+	0%, 20% {
+		background-image: url("../imagenes/imagen1.jpg");
+        background-size: cover;
+        background-position: center;
+	}
+
+	25%, 45% {
+        background-image: url("../imagenes/imagen2.jpg");
+        background-size: cover;
+        background-position: center;
+	}
+
+	50%, 70% {
+        background-image: url("../imagenes/imagen3.jpg");
+        background-size: cover;
+        background-position: center;
+	}
+
+	75%, 100% {
+        background-image: url("../imagenes/imagen4.jpg");
+        background-size: cover;
+        background-position: center;
+	}
+}
+
+// ----- CONDICIONALES ----- //
+
+/// Estilos condicionales para la clase .busqueda.
+.busqueda {
+    /// Estilos aplicados si la variable $boton es igual a 'estilo'.
+    @if ($boton == estilo) {
+        font-size: 1em;
+        background: none;
+        border: none;
+        background-color: rgba(14,14,14,.712);
+        color: #fff;
+        width: 45%;
+        height: 3.75em;
+        cursor: pointer;
+        outline: none;    
+    } @else {
+        /// Estilos aplicados si la variable $boton no es igual a 'estilo'.
+        display: none;
+    }
+}
+
+/// Placeholder para quitar bordes y outlines
+/// @example
+/// .card{
+///     @extend %inputsNoneBorder;
+/// }
+%inputsNoneBorder{
+    border: none;
+    outline: none;
+}
+
+/// Placeholder para poner espaciado entre letras en los subtítulos
+/// @example
+/// .h3{
+///     @extend %subtitlesLetterSpacing;
+/// }
+%subtitlesLetterSpacing{
+    letter-spacing: .25em;
+}

@@ -1,0 +1,336 @@
+/**
+ * Estilos para la respuesta a diferentes tamaños de pantalla (responsive).
+ */
+
+/* ----- RESPONSIVE ----- */
+
+/// Estilos para pantallas con ancho máximo de 1200px.
+@media screen and (max-width: 1200px) {
+
+    /// Ajuste del tamaño de fuente en el cuerpo del documento.
+    body {
+        font-size: 14px;
+    }
+
+    /// Ajustes específicos para la sección Alquiler y Venta.
+    .desc_icono {
+        span {
+            padding-left: 10px;
+        }
+    }
+
+    /// Ajustes específicos para la sección Nosotros.
+    .clientes {
+        .cliente1, .cliente2 {
+             width: 90%;
+        }   
+    }
+    .contenedor-imagen2 {
+        width: 25em;
+    }
+}
+
+/// Estilos para pantallas con ancho máximo de 992px (desktops y dispositivos grandes).
+@media screen and (max-width: 992px) {
+
+    /// Ajuste del tamaño de fuente en el cuerpo del documento.
+    body {
+        font-size: 11px;
+    }
+
+    /// Ajustes específicos para la sección Alquiler y Venta.
+    .desc_icono {
+        span {
+            padding-left: 10px;
+        }
+    }
+
+    /// Ajustes específicos para la sección Contacto.
+    .titulo {
+        margin-bottom: 1rem !important;
+    }
+}
+
+/// Estilos para pantallas con ancho máximo de 768px.
+@media screen and (max-width: 768px) {
+
+    /// Ajuste del tamaño de fuente en el cuerpo del documento.
+    body {
+        font-size: 12px;
+    }
+
+    /// Ajustes específicos para la sección Inicio.
+    .logo {
+        margin-left: -40px;
+    }
+
+    /// Menú de hamburguesa.
+    header {
+        label {
+            display: block;
+            position: fixed;
+            top: 2.5em;
+            right: 2.5em;
+        }
+    }
+    .menu {
+        ul {
+            position: fixed;
+            top: 8.125em;
+            right: -100%;
+            background-color: #222;
+            width: 45%;
+            li {
+                padding: 0;
+                padding-top: 1.875em;
+                margin: 0;
+                display: block;
+                display: flex;
+                justify-content: center;
+                &:hover {
+                    background-color: rgba(255,255,255,.2);
+                }
+                a {
+                    color: #fff;
+                    padding-bottom: 1.5625em;
+                    &:hover {
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+    header {
+        label {
+            top: 1.5625rem;
+        }
+    }
+
+    #check {
+        &:checked ~ .menu {
+            ul {
+                right: 0px;
+                transition: all .40s;
+            }
+        }
+    }
+
+    /// Ajustes específicos para la sección Inicio.
+    .contenedorTexto {
+        h1 {
+            font-size: 2.375em;
+        }
+    }
+    .banner {
+        height: 600px;
+        background-attachment: local; // Arreglo para celular
+    }
+
+    /// Ajustes específicos para la sección Alquiler y Venta.
+    .cont_selec {
+        justify-content: center;
+    }
+    .selector {
+        min-width: 40%;
+    }
+    .padre_precios {
+        min-width: 40%;
+    }
+    .padre_busqueda {
+        min-width: 40%;
+    }
+    .result_busqueda {
+        max-width: 87%;
+    }
+    .desc_icono {
+        span {
+            padding-left: 16px;
+        }
+    }
+    .casas {
+        .casa1, .casa2, .casa3, .casa4, .casa5, .casa6 {
+            width: 40%;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+        .casa1, .casa3, .casa5 {
+            margin-right: 20px;
+        }
+        .casa1, .casa2 {
+            margin: 10px 10px 20px 10px;
+        }
+    }
+
+    /// Ajustes específicos para la sección Nosotros.
+    .clientes {
+        h2 {
+            font-size: 25px;
+        }
+        .cliente1, .cliente2 {
+            width: 90%;
+        }
+        .opinion {
+            font-size: 12px;
+        }
+    }
+    .contenedor-imagen2 {
+        width: 15em;
+        margin-top: 170px;
+    }
+
+    /// Ajustes específicos para la sección Contacto.
+     .formulario {
+        max-width: 500px;
+    }
+
+    /// Ajustes específicos para la sección Footer.
+    .sobre_nosotros {
+        padding-left: 90px;
+        .ubicacion {
+            margin-top: -10px;
+        }
+        .contacto_info {
+            margin-top: 10px;
+        }
+        .horarios {
+            margin-top: 10px;
+        }
+        .redes-sociales {
+            margin-top: 10px;
+        }
+    }
+    .cont_logo_foot {
+        min-width: 30%;
+        .cont_imgLogo {
+            min-width: 130px;
+            margin-right: -15px;
+        }
+    }
+    .contenedorUbi {
+        min-width: 70%;
+        flex-direction: column;
+    }
+}
+
+/// Estilos para pantallas con ancho máximo de 576px.
+@media screen and (max-width: 576px) {
+
+    /// Ajuste del tamaño de fuente en el cuerpo del documento.
+    body {
+        font-size: 12px;
+    }
+
+    /// Ajustes específicos para la sección Alquiler y Venta.
+    .casas {
+        .casa1, .casa2, .casa3, .casa4, .casa5, .casa6 {
+            width: 80%;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+    }
+
+    /// Ajustes específicos para la sección Nosotros.
+    .clientes {
+        height: 420px;
+    }
+    .info {
+        width: 80%;
+    }
+    .contenedor-imagen2 {
+        margin: 0.625em 10px 2.5em 10px;
+        width: 25em;
+        height: 24em;
+    }
+
+    /// Ajustes específicos para la sección Contacto.
+    .formulario {
+        max-width: 300px;
+    }
+
+    /// Ajustes específicos para la sección Footer.
+    .foot_padre {
+        margin-bottom: -30px;
+        min-width: 100%;
+        flex-direction: column;
+    }
+    .contenedorUbi {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .sobre_nosotros {
+        min-width: 100%;
+        order: 1;
+        padding-left: 20px;
+    }
+    .cont_logo_foot {
+        min-width: 80%;
+        justify-content: center;
+        padding-top: 50px;
+        order: 2;
+    }
+    .direccion {
+        min-width: 50%;
+    }
+    .contacto_info {
+        min-width: 50%;
+        margin-top: 0 !important;
+    }
+    .horarios {
+        min-width: 50%;
+    }
+    .redes-sociales {
+        min-width: 50%;
+        padding-right: 0 !important;
+        a {
+            padding: 9px 9px !important;
+        }
+    }
+}
+
+/// Estilos para pantallas con ancho máximo de 300px.
+@media screen and (max-width: 300px) {
+
+    /// Ajuste del tamaño de fuente en el cuerpo del documento.
+    body {
+        font-size: 10px;
+    }
+    header {
+        label {
+            top: 1.2rem;
+        }
+    }
+
+    /// Ajustes específicos para la sección Venta y Alquiler.
+    .selector {
+        min-width: 100%;
+    }
+    .padre_precios {
+        min-width: 100%;
+    }
+    .padre_busqueda {
+        width: 100%;
+    } 
+
+    /// Ajustes específicos para la sección Nosotros.
+    .clientes {
+        height: 550px;
+        h2 {
+            font-size: 25px;
+        }
+        .cliente1, .cliente2 {
+            width: 90%;
+        }
+    }
+
+     /// Ajustes específicos para la sección Contacto.
+     .formulario {
+        max-width: 200px !important;
+    }
+
+    /// Ajustes específicos para la sección Footer.
+    .redes-sociales {
+        a {
+            padding: 7px 7px !important;
+        }
+    }
+}
