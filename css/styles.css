@@ -141,19 +141,19 @@ header label {
 
 @keyframes banner {
   0%, 20% {
-    background-image: url("../../imagenes/imagen1.jpg");
+    background-image: url("../imagenes/imagen1.jpg");
     background-size: cover;
     background-position: center; }
   25%, 45% {
-    background-image: url("../../imagenes/imagen2.jpg");
+    background-image: url("../imagenes/imagen2.jpg");
     background-size: cover;
     background-position: center; }
   50%, 70% {
-    background-image: url("../../imagenes/imagen3.jpg");
+    background-image: url("../imagenes/imagen3.jpg");
     background-size: cover;
     background-position: center; }
   75%, 100% {
-    background-image: url("../../imagenes/imagen4.jpg");
+    background-image: url("../imagenes/imagen4.jpg");
     background-size: cover;
     background-position: center; } }
 
